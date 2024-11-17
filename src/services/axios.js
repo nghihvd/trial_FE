@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const BASE_URL = "https://furryfriendfundbe.onrender.com";
+export const BASE_URL = "https://furryfriendfundbe.onrender.com/";
 
 const token = localStorage.getItem("token");
 const instance = axios.create({
