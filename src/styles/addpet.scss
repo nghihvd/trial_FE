@@ -1,0 +1,78 @@
+/* src/styles/AddPet.css */
+
+.pets-container {
+  padding: 30px 30px;
+  margin-top: 30px;
+}
+
+/* Định dạng tiêu đề */
+.add-pet__title {
+  color: #333; /* Màu chữ */
+  font-size: 28px; /* Kích thước chữ */
+  text-align: center; /* Căn giữa */
+  margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+}
+
+/* Định dạng form */
+.add-pet__form {
+  display: flex; /* Sử dụng flexbox */
+  flex-direction: column; /* Căn theo cột */
+}
+
+.text-center {
+  padding-bottom: 100px;
+  select {
+    margin-bottom: 20px;
+  }
+}
+
+/* Định dạng các ô nhập */
+.add-pet__input {
+  width: 50%;
+  margin: 10px;
+  border-radius: 5px;
+}
+.add-pet__textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.form-check-input {
+  margin-right: 10px;
+}
+
+.form-check-label {
+  white-space: nowrap;
+}
+
+/* Định dạng nút */
+.create-button {
+  background-color: #ecc874;
+  color: white;
+  border: none;
+  padding: 5px 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: #f1ba3a;
+    transform: translateY(-2px);
+  }
+}
+
+.form-check-label {
+  font-weight: 400;
+}

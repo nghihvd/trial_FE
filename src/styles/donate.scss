@@ -1,0 +1,116 @@
+.donate-container {
+  display: flex;
+  flex-direction: column; // Stack elements vertically
+  padding: 20px;
+  border-radius: 10px; // Rounded corners
+}
+
+.donate-content {
+  margin-bottom: 20px; // Space between content and image
+  background-color: #ffffff; // White background for content
+  padding: 20px; // Padding inside content
+  border-radius: 8px; // Rounded corners
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Shadow for content
+}
+
+.donate-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; // Center the image
+  align-items: center; // Center vertically
+  margin-bottom: 20px; // Space below the image
+}
+
+.donators-table {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  width: 100%; // Full width
+  max-width: 600px; // Set a maximum width for the table
+  border-radius: 8px; // Rounded corners
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Shadow for table
+}
+
+.donators-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.donators-table th,
+.donators-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.donators-table th {
+  background-color: #e0e0e0; // Light gray for header
+  font-weight: bold; // Bold text for header
+}
+
+.donation-notes {
+  margin-bottom: 20px; // Space below the notes
+  color: #000000; // Darker color for notes
+}
+
+.anonymous-donate {
+  margin-top: 105px;
+}
+
+.title-donate {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+h4,
+h6 {
+  color: #000000; // Dark text color for headings
+}
+
+button.edit-button {
+  background-color: #f1ba3a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #dead43;
+  }
+}
+.root-table {
+  p {
+    margin-top: 14px;
+  }
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; // Khoảng cách dưới thanh tìm kiếm
+}
+
+.search-input {
+  border: 1px solid #ccc; // Đường viền
+  border-radius: 4px; // Bo góc
+
+  padding: 10px; // Khoảng cách bên trong
+  width: 100%; // Chiều rộng đầy đủ
+  max-width: 300px; // Chiều rộng tối đa
+}
+
+.search-container i {
+  position: absolute;
+  margin-left: 270px;
+  font-size: 18px; // Kích thước biểu tượng
+  color: #888; // Màu sắc biểu tượng
+}
+
+.donate-image-anym {
+  margin-top: 65px;
+}

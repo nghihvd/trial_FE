@@ -1,0 +1,47 @@
+.support-banner-bg {
+  background-image: url(https://www.hanoipetadoption.com/Images/ready-to-support.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    color: white;
+  }
+}
+
+.overlay {
+  box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.42);
+}
+
+.container-fluid {
+  padding: 15px 15px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.support-button {
+  background-color: #f51a13;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 25px; // Tăng giá trị này để bo tròn các góc nhiều hơn
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.support-button:hover {
+  transform: translateY(-2px);
+  background-color: #ea463a;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.support-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

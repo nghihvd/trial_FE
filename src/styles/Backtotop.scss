@@ -1,0 +1,23 @@
+/* src/components/BackToTop.scss */
+.back-to-top {
+  position: fixed;
+  bottom: 20px; /* Khoảng cách từ dưới lên */
+  right: 20px; /* Khoảng cách từ bên phải */
+  background-color: #f1cf7e; /* Màu nền */
+  color: white; /* Màu chữ */
+  border: none;
+  border-radius: 50%; /* Hình tròn */
+  width: 50px; /* Đường kính */
+  height: 50px; /* Đường kính */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: #cb9e2d; /* Màu nền khi hover */
+  }
+}

@@ -1,0 +1,197 @@
+.container .adoption-process-container {
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  // border-radius: 8px;
+  // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%; // Độ rộng tối đa của container
+}
+.modal {
+  z-index: 1050;
+}
+
+.modal-backdrop {
+  z-index: 1040; // Đảm bảo backdrop không che modal
+}
+.adoption-process-content {
+  padding: 30px;
+
+  h1.adoption-title {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  p.adoption-intro {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    color: #495057;
+    margin-bottom: 20px;
+  }
+
+  .adoption-steps-list {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      font-size: 1.2rem;
+      margin: 15px 0;
+      color: #495057;
+      display: flex;
+      // align-items: center;
+
+      i {
+        margin-top: 9px;
+        font-size: 1.2rem; // Kích thước icon
+        margin-right: 10px; // Khoảng cách giữa icon và chữ
+      }
+    }
+  }
+
+  .adoption-policy {
+    margin: 30px 0;
+    font-size: 1.1rem;
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    label {
+      color: #495057;
+
+      strong {
+        color: #090c10; // Màu chữ của chính sách và quy định
+      }
+    }
+  }
+
+  .confirm-button {
+    display: block;
+    width: 20%;
+    align-items: center;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #2b8dd8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+      background-color: #116494d5;
+    }
+  }
+}
+
+.modal .btn .modal-header {
+  background-color: #2b8dd8; // Màu nền của modal header
+  color: #070707;
+  border-bottom: none;
+
+  .modal-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  button.close {
+    color: #fff;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+.modal .modal-content {
+  background-color: rgb(248, 248, 248);
+}
+.modal-body {
+  font-size: 1.1rem;
+  color: #333;
+  background-color: #fff;
+
+  .label {
+    font-weight: bold;
+  }
+
+  .form-control {
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    margin-top: 5px;
+  }
+}
+
+.modal-footer {
+  border-top: none;
+
+  .cancel-button {
+    background-color: #73a7cf !important;
+    margin-left: 75px;
+    margin-right: 20;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 6px 20px;
+    display: inline-block; // Thay đổi từ block sang inline-block
+    font-size: 16px;
+    border-radius: 5px; // Tăng giá trị này để bo tròn các góc nhiều hơn
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .agree-button {
+    background-color: #73a7cf;
+    color: rgb(0, 0, 0);
+    border: none;
+    display: inline-block;
+    padding: 6px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+}
+
+// CSS cho Modal cảm ơn
+.thank-you-modal {
+  .modal-header {
+    background-color: #f1ba3a;
+    color: #fff;
+  }
+
+  .modal-body {
+    font-size: 1.2rem;
+    color: #f1cf7e;
+  }
+
+  .btn .thank-footer {
+    border-top: none;
+
+    .close-button {
+      background-color: #f1cf7e;
+      color: rgb(0, 0, 0);
+      border: none;
+      padding: 6px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      margin-left: 60px;
+      :hover {
+        background-color: #f1ba3a;
+        transform: translateY(-2px);
+      }
+    }
+  }
+}

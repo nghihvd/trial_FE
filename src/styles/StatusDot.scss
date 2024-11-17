@@ -1,0 +1,24 @@
+.status-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 4px;
+  margin-left: 5px;
+
+  &.green {
+    background-color: #52c41a;
+  }
+
+  &.red {
+    background-color: #ff4d4f;
+  }
+
+  &.yellow {
+    background-color: #faad14;
+  }
+
+  &.gray {
+    background-color: #d9d9d9;
+  }
+}

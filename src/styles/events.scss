@@ -1,0 +1,198 @@
+.event-list-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .mb-4 {
+    margin-bottom: 20px;
+  }
+
+  .card-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-img-top {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .card-body {
+      flex-grow: 1;
+      padding: 15px;
+
+      .card-title {
+        font-size: 1.3em;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .card-subtitle {
+        font-size: 1em;
+        color: #666;
+        margin-bottom: 10px;
+      }
+
+      .card-text {
+        font-size: 0.95em;
+        color: #444;
+        margin-bottom: 15px;
+      }
+
+      .d-flex {
+        justify-content: space-between;
+
+        .btn {
+          padding: 8px 15px;
+          border-radius: 5px;
+          font-weight: bold;
+          transition: all 0.3s ease;
+
+          &:hover {
+            transform: translateY(-2px);
+          }
+        }
+
+        .btn-primary {
+          background-color: #f1cf7e;
+          border-color: #f1cf7e;
+          color: #ffffff;
+
+          &:hover {
+            background-color: #e6be6a;
+            border-color: #e6be6a;
+          }
+        }
+
+        .btn-danger {
+          background-color: #ff6b6b;
+          border-color: #ff6b6b;
+
+          &:hover {
+            background-color: #ff5252;
+            border-color: #ff5252;
+          }
+        }
+      }
+    }
+
+    .card-footer {
+      background-color: rgba(0, 0, 0, 0.03);
+      padding: 10px 15px;
+      border-top: 1px solid rgba(0, 0, 0, 0.125);
+      font-size: 0.9em;
+      color: #666;
+    }
+  }
+
+  .dropdown-wrapper {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    button {
+      margin: 0 5px;
+      padding: 10px 20px;
+      background-color: #f3f3f3;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, border-color 0.3s;
+
+      &:hover {
+        background-color: #e2e2e2;
+        border-color: #ccc;
+      }
+
+      &.active {
+        color: rgb(0, 0, 0);
+      }
+    }
+  }
+  .event-button {
+    background-color: #f1cf7e;
+    border-color: #f1cf7e;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #e6be6a;
+      border-color: #e6be6a;
+      transform: translateY(-2px);
+    }
+  }
+
+  .MuiIconButton-root {
+    padding: 8px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    backdrop-filter: blur(5px);
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  .MuiMenu-root {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .MuiMenuItem-root {
+    color: #333;
+    padding: 10px 16px;
+    font-size: 14px;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+  }
+}
+
+.event-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+}

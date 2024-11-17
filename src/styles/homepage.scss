@@ -1,0 +1,338 @@
+.homepage {
+  font-family: Arial, sans-serif;
+
+  /*Banner*/
+  .hero-section {
+    margin-top: 20px;
+    background-image: url("../assets/images/banner.webp");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.5em;
+    }
+  }
+  /*Về chúng tôi*/
+  .about-us {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+
+    h2 {
+      font-weight: 700;
+      font-size: 32px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      text-align: justify;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .about-us-button {
+      background-color: #f1cf7e;
+      width: 200px;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #eec157;
+        transform: translateY(-2px);
+      }
+    }
+
+    .about-us-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  /*Danh sách các bé*/
+  .featured-pets {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .pet-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 0 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      h3 {
+        margin-top: 15px;
+      }
+    }
+
+    .adopt-button {
+      display: block;
+      width: 200px;
+      margin: 30px auto 0;
+      padding: 10px;
+      background-color: #fa4918;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 1.2em;
+      cursor: pointer;
+      &:hover {
+        background-color: #df2f2fdf;
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+
+    button {
+      padding: 10px 20px;
+      background-color: #f1cf7e;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
+/*Tin tức*/
+.news {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+
+  h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .news-slider {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .news-items {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .news-item {
+    flex: 0 0 calc(33.333% - 14px);
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: contain;
+    }
+
+    .news-content {
+      padding: 15px;
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #333;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.4;
+    }
+  }
+
+  .read-more {
+    margin-top: 20px;
+    background-color: #f1cf7e;
+    width: 200px;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #eec157;
+      transform: translateY(-2px);
+    }
+  }
+
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+
+    &.left {
+      left: 10px;
+    }
+
+    &.right {
+      right: 10px;
+    }
+  }
+  .slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin: 0 5px;
+      cursor: pointer;
+
+      &.active {
+        background-color: #e91e63;
+      }
+    }
+  }
+}
+
+/*Banner ủng hộ*/
+
+.featured-events {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .event-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    h3 {
+      margin-top: 15px;
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    p {
+      margin: 8px 0;
+      color: #666;
+    }
+
+    .event-time-info {
+      color: green;
+      font-weight: bold;
+      
+      padding: 5px;
+      border-radius: 4px;
+    }
+
+    .status {
+      font-weight: bold;
+      &.published { color: #28a745; }
+      &.pending { color: #ffc107; }
+      &.ending { color: #dc3545; }
+    }
+  }
+
+  .view-all-events {
+    display: block;
+    width: 200px;
+    margin: 30px auto 0;
+    padding: 10px;
+    background-color: #fa4918;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2em;
+    
+    &:hover {
+      background-color: #df2f2fdf;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.card-footer {
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 10px 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  font-size: 0.9em;
+  color: #666;
+}

@@ -1,0 +1,117 @@
+.notification-bell {
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+
+  .fa-bell {
+    font-size: 1.5rem;
+    color: #333;
+  }
+
+  .notification-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 16px; // Tăng kích thước số hiển thị thông báo lên 16px
+    font-weight: bold;
+  }
+
+  .notification-dropdown {
+    position: absolute;
+    top: 120%;
+    right: -10px;
+    width: 350px;
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+
+    .notification-item {
+      padding: 15px;
+      border-bottom: 1px solid #e0e0e0;
+      font-size: 16px; // Tăng kích thước font chữ lên 16px
+      line-height: 1.5; // Điều chỉnh khoảng cách dòng để dễ đọc hơn
+      word-wrap: break-word;
+      white-space: pre-wrap;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+
+      &.unread {
+        font-weight: bold;
+        background-color: #e6f7ff;
+      }
+
+      /* Tiêu đề thông báo */
+      h3 {
+        font-size: 18px; // Tăng kích thước chữ tiêu đề lên 18px
+        font-weight: bold;
+        margin: 5px 0;
+      }
+
+      /* Đoạn văn bản trong thông báo */
+      p {
+        font-size: 16px; // Tăng kích thước font chữ lên 16px
+        margin: 0;
+        color: #333;
+      }
+    }
+  }
+}
+
+/* Styling cho danh sách các thông báo */
+.staff-notifications,
+.member-notifications {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+
+  h2 {
+    font-size: 18px; // Tăng kích thước tiêu đề lên 18px
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .notification-list {
+    list-style-type: none;
+    padding: 0;
+
+    .notification-item {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
+      }
+
+      p {
+        margin: 0;
+        color: #333;
+        font-size: 16px; // Tăng kích thước chữ đoạn văn lên 16px
+        line-height: 1.5; // Điều chỉnh line-height để dễ đọc hơn
+      }
+    }
+  }
+}

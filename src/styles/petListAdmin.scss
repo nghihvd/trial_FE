@@ -1,0 +1,44 @@
+@import "./petslist.scss";
+
+.pets-list-admin-container {
+  @extend .pets-list-container;
+}
+
+.add-update-button {
+  margin-right: 0;
+
+  .nav-link-add-pet {
+    display: inline-flex;
+    padding: 4px 15px;
+    background-color: #f1cf7e;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    float: right;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: #f1cf7e;
+    }
+
+    h3 {
+      margin-top: 5px;
+      font-size: 18px;
+    }
+  }
+}
+
+.pet-item {
+  .pet-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    h3 {
+      margin: 0;
+      margin-left: 5px;
+    }
+  }
+}

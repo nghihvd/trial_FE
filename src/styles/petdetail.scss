@@ -1,0 +1,360 @@
+.contain .petdetail-container {
+  margin-top: 50px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  // max-width: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+}
+.name-status {
+  display: flex;
+  flex-direction: column;
+  column-gap: 0;
+
+  h4 {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: -15px;
+  }
+}
+
+.pet-img {
+  flex: 1; // Chiếm 1 phần không gian của row
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+
+  img {
+    width: 350px;
+    height: auto;
+    border-radius: 3px;
+    border: 3px;
+  }
+}
+
+.pet-info {
+  flex: 2;
+  padding-left: 30px;
+  margin-top: 40px;
+
+  h1 {
+    font-size: 30px;
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  p {
+    border-bottom: 1px dashed #cecece;
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+    font-size: medium;
+  }
+}
+
+.adopt-button {
+  margin-top: 25px;
+  button {
+    background-color: #f1ba3a;
+    color: white;
+    border: none;
+    padding: 5px 60px;
+    font-size: 20px;
+    border-radius: 25px; // Tăng giá trị này để bo tròn các góc nhiều hơn
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #dead43;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.delete-button-petdetail {
+  .delete-button1 {
+    font-size: 16px;
+    margin: 10px;
+    margin-left: 27px;
+    background-color: #f1ba3a;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      background-color: #dead43;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.edit-button1 {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 25%;
+  background-color: #f1ba3a;
+  color: white;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background-color: #dead43;
+    transform: translateY(-2px);
+  }
+}
+
+.remind-button {
+  .request-ban-button {
+    margin: 20px;
+    width: 25%;
+    background-color: #f1ba3a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #dead43;
+    }
+  }
+  .remind-button1 {
+    margin: 20px;
+    background-color: #f1ba3a;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #dead43;
+    }
+  }
+}
+
+.support-banner-bg {
+  background-image: url(https://www.hanoipetadoption.com/Images/ready-to-support.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 40px 0;
+  margin-left: calc(-50vw + 50%); // Căn giữa và mở rộng ra ngoài container
+  padding: 40px 0; // Thêm padding trên dưới để tăng chiều cao
+
+  h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    color: white;
+  }
+}
+
+.overlay {
+  box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.42);
+}
+
+.container .container-fluid {
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.support-button {
+  background-color: #f51a13;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 25px; // Tăng giá trị này để bo tròn các góc nhiều hơn
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.support-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.support-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pets {
+  margin-top: 5px;
+  max-width: 100%;
+  padding: 50px 0;
+  background-color: #f5f5f5;
+
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .pet-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px;
+
+    img {
+      width: 70%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    h3 {
+      margin-top: 15px;
+    }
+  }
+
+  .adopt-button {
+    display: block;
+    width: 200px;
+    margin: 30px auto 0;
+    padding: 10px;
+    background-color: #f71010;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2em;
+    cursor: pointer;
+    &:hover {
+      background-color: #ea463a;
+      transform: translateY(-5px);
+    }
+  }
+}
+
+.pet-status {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 10px;
+  h2 {
+    font-weight: 700;
+  }
+
+  .column {
+    flex: 1;
+    margin-right: 20px;
+  }
+}
+
+.small-divider {
+  width: 80px;
+  height: 3px;
+  background-color: #000000;
+  margin-left: 0;
+}
+
+.contact-bg {
+  background-image: url(https://www.hanoipetadoption.com/Images/ready-to-support.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    color: white;
+  }
+}
+
+.overlay {
+  box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.42);
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.support-banner {
+  .container {
+    max-width: 1200px; // hoặc giá trị phù hợp với layout của bạn
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .support-text {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .support-button {
+    background-color: #f51a13;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background-color: #d41811;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.contact-banner-wrapper {
+  margin: 30px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.support-banner-wrapper {
+  margin: 30px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
